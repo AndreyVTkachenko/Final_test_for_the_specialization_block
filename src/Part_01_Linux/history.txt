@@ -19,58 +19,87 @@
    19  ls -l
    20  sudo ./VBoxLinuxAdditions.run 
    21  sudo reboot
-   22  [200~cat > Pets.txt
-   23  собаки
-   24  кошки
-   25  cat > Pets.txt
-   26  ls -l
-   27  rm Pets.txt 
-   28  ls -l
+   22  pwd
+   23  ls -l
+   24  cd clipboard/
+   25  sudo cd clipboard/
+   26  [200~cat > Pets.txt
+   27  собаки
+   28  кошки
    29  cat > Pets.txt
-   30  cat > PackAnimals.txt
-   31  cat Pets.txt PackAnimals.txt > AllAnimals.txt
-   32  cat AllAnimals.txt
-   33  mv AllAnimals.txt HumanFriends.txt
-   34  cat HumanFriends.txt 
-   35  ls -l
-   36  mkdir Animals
-   37  ls -l
-   38  mv HumanFriends.txt Animals/
-   39  cd Animals/
-   40  ls -l
-   41  sudo apt update
-   42  sudo apt install mysql-server
-   43  sudo systemctl start mysql
-   44  sudo systemctl status mysql
-   45  cd ~
-   46  cd Animals/
-   47  cd ~
-   48  sudo dpkg -i gimp
-   49  sudo dpkg -i gimp.deb
-   50  gimp
-   51  cd Animals/
-   52  sudo apt update
-   53  sudo apt download gimp
-   54  sudo su
-   55  cd .
-   56  cd ..
-   57  sudo apt update
-   58  sudo apt download gimp
-   59  sudo su
-   60  sudo dpkg -i gimp.deb
-   61  sudo su
-   62  sudo apt-get update
-   63  sudo apt-get install apt-utils
-   64  mkdir ~/gimp_temp
-   65  cd ~/gimp_temp
-   66  apt-get download gimp
-   67  sudo dpkg -i gimp*.deb
-   68  sudo dpkg -P gimp
-   69  history > history.txt
-   70  ls -l
-   71  cat history.txt 
-   72  rm history.txt 
-   73  ls -l
-   74  cd ..
-   75  ls -l
-   76  history > history.txt
+   30  ls -l
+   31  rm Pets.txt 
+   32  ls -l
+   33  cat > Pets.txt
+   34  cat > PackAnimals.txt
+   35  cat Pets.txt PackAnimals.txt > AllAnimals.txt
+   36  cat AllAnimals.txt
+   37  mv AllAnimals.txt HumanFriends.txt
+   38  cat HumanFriends.txt 
+   39  ls -l
+   40  mkdir Animals
+   41  ls -l
+   42  mv HumanFriends.txt Animals/
+   43  cd Animals/
+   44  ls -l
+   45  sudo apt update
+   46  sudo apt install mysql-server
+   47  sudo systemctl start mysql
+   48  sudo systemctl status mysql
+   49  cd ~
+   50  cd Animals/
+   51  cd ~
+   52  sudo dpkg -i gimp
+   53  sudo dpkg -i gimp.deb
+   54  gimp
+   55  cd Animals/
+   56  sudo apt update
+   57  sudo apt download gimp
+   58  sudo su
+   59  cd .
+   60  cd ..
+   61  sudo apt update
+   62  sudo apt download gimp
+   63  sudo su
+   64  sudo dpkg -i gimp.deb
+   65  sudo su
+   66  sudo apt-get update
+   67  sudo apt-get install apt-utils
+   68  mkdir ~/gimp_temp
+   69  cd ~/gimp_temp
+   70  apt-get download gimp
+   71  sudo dpkg -i gimp*.deb
+   72  sudo dpkg -P gimp
+   73  history > history.txt
+   74  ls -l
+   75  cat history.txt 
+   76  rm history.txt 
+   77  ls -l
+   78  cd ..
+   79  ls -l
+   80  history > history.txt
+   81  ls -l
+   82  mv history.txt /home/db/clipboard/
+   83  chmod 777 /home/db/clipboard
+   84  ls -l
+   85  sudo su
+   86  sudo nano /etc/apt/sources.list
+   87  lsb_release -c
+   88  sudo nano /etc/apt/sources.list
+   89  sudo apt update
+   90  sudo apt-key adv --keyserver keys.gnupg.net --recv-keys B7B3B788A8D3785C
+   91  gpg --keyserver keys.gnupg.net --recv-keys B7B3B788A8D3785C
+   92  gpg --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+   93  sudo apt update
+   94  sudo apt-key adv --keyserver keys.gnupg.net --recv-keys B7B3B788A8D3785C
+   95  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+   96  sudo apt update
+   97  cat /etc/apt/sources.list
+   98  ls -l
+   99  sudo su
+  100  history > history.txt
+  101  mv history.txt /home/db/clipboard/
+  102  sudo su
+  103  mkdir shared_folder
+  104  ls -l
+  105  history > history.txt

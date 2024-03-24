@@ -1,0 +1,76 @@
+    1  ls -l
+    2  cd clipboard/
+    3  pwg
+    4  pwd
+    5  cat Test.txt
+    6  cat >  Test.txt
+    7  mkdir ~/shared_folder
+    8  sudo mount -t vboxsf shared_folder ~/shared_folder
+    9  pwd
+   10  ls -l
+   11  sudo ./VBoxGuestAdditions.run
+   12  sudo ./VBoxGuestAdditions.iso
+   13  chmod +x VBoxGuestAdditions.iso 
+   14  sudo su
+   15  sudo apt-get install virtualbox-guest-additions-iso
+   16  sudo mkdir /media/cdrom
+   17  sudo mount -o loop /usr/share/virtualbox/VBoxGuestAdditions.iso /media/cdrom
+   18  cd /media/cdrom
+   19  ls -l
+   20  sudo ./VBoxLinuxAdditions.run 
+   21  sudo reboot
+   22  [200~cat > Pets.txt
+   23  собаки
+   24  кошки
+   25  cat > Pets.txt
+   26  ls -l
+   27  rm Pets.txt 
+   28  ls -l
+   29  cat > Pets.txt
+   30  cat > PackAnimals.txt
+   31  cat Pets.txt PackAnimals.txt > AllAnimals.txt
+   32  cat AllAnimals.txt
+   33  mv AllAnimals.txt HumanFriends.txt
+   34  cat HumanFriends.txt 
+   35  ls -l
+   36  mkdir Animals
+   37  ls -l
+   38  mv HumanFriends.txt Animals/
+   39  cd Animals/
+   40  ls -l
+   41  sudo apt update
+   42  sudo apt install mysql-server
+   43  sudo systemctl start mysql
+   44  sudo systemctl status mysql
+   45  cd ~
+   46  cd Animals/
+   47  cd ~
+   48  sudo dpkg -i gimp
+   49  sudo dpkg -i gimp.deb
+   50  gimp
+   51  cd Animals/
+   52  sudo apt update
+   53  sudo apt download gimp
+   54  sudo su
+   55  cd .
+   56  cd ..
+   57  sudo apt update
+   58  sudo apt download gimp
+   59  sudo su
+   60  sudo dpkg -i gimp.deb
+   61  sudo su
+   62  sudo apt-get update
+   63  sudo apt-get install apt-utils
+   64  mkdir ~/gimp_temp
+   65  cd ~/gimp_temp
+   66  apt-get download gimp
+   67  sudo dpkg -i gimp*.deb
+   68  sudo dpkg -P gimp
+   69  history > history.txt
+   70  ls -l
+   71  cat history.txt 
+   72  rm history.txt 
+   73  ls -l
+   74  cd ..
+   75  ls -l
+   76  history > history.txt

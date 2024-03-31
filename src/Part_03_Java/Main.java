@@ -63,12 +63,21 @@ public class Main {
 
         // список с командами
         registry.listAllAnimals();
+        System.out.println();
 
         // всего
         System.out.println("Общее количество животных в реестре: " + registry.getTotalAnimalsCount());
+        System.out.println();
 
         // с днём рождения
         registry.listAnimalsByBirthDate();
+        System.out.println();
+
+        // + команда
+        System.out.println("Текущие команды для " + fido.getName() + ":");
+        registry.listCommands(fido);
+        registry.trainCommand(fido, "Roll Over");
+        registry.listCommands(fido);
     }
 }
 

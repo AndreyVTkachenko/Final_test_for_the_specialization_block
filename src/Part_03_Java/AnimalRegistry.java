@@ -18,17 +18,16 @@ public class AnimalRegistry {
         System.out.println("\n" + "Список всех животных:");
         for (Animal animal : animals) {
             System.out.println("Имя: " + animal.getName() + ", Тип: " + animal.getClass().getSimpleName());
-            List<String> commands = animal.listCommands();
-            if (commands != null) {
-                System.out.println("Команды: " + commands);
-            }
+            listCommands(animal);
         }
     }
 
     public void listCommands(Animal animal) {
-        System.out.println("Команды для " + animal.getName() + ":");
         List<String> commands = animal.listCommands();
-        if (commands != null) {
+        if (commands.isEmpty()) {
+            System.out.println("У " + animal.getName() + " нет команд");
+        } else {
+            System.out.println("Команды для " + animal.getName() + ":");
             for (String command : commands) {
                 System.out.println(command);
             }

@@ -1,15 +1,17 @@
 package Part_03_Java;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Animal {
     private String name;
-    private String birthDate; // возможно следует заменить на String если возникнут сложности в дальнейшем
+    private String birthDate;
     List<String> commands;
 
     public Animal(String name, String birthDate) {
         this.name = name;
         this.birthDate = birthDate;
+        this.commands = new ArrayList<>();
     }
 
     public String getName() {
@@ -27,5 +29,6 @@ public abstract class Animal {
     }
 
     public void addCommand(String newCommand) {
+        commands.add(newCommand);
     }
 }

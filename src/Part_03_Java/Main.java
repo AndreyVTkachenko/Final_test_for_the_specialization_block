@@ -7,42 +7,68 @@ public class Main {
         // Создание реестра животных
         AnimalRegistry registry = new AnimalRegistry();
 
-        // Добавление животных в реестр
-        Dog dog = new Dog("Fido", "2020-01-01", Arrays.asList("Sit", "Stay", "Fetch"));
-        registry.addAnimal(dog);
+        // собаки
+        Dog fido = new Dog("Fido", "2020-01-01", Arrays.asList("Sit", "Stay", "Fetch"));
+        registry.addAnimal(fido);
 
-        Cat cat = new Cat("Whiskers", "2019-05-15", Arrays.asList("Sit", "Pounce"));
-        registry.addAnimal(cat);
+        Dog buddy = new Dog("Buddy", "2018-12-10", Arrays.asList("Sit", "Paw", "Bark"));
+        registry.addAnimal(buddy);
 
-        Hamster hamster = new Hamster("Hammy", "2021-03-10", Arrays.asList("Roll", "Hide"));
-        registry.addAnimal(hamster);
+        Dog bella = new Dog("Bella", "2019-11-11", Arrays.asList("Sit", "Stay", "Roll"));
+        registry.addAnimal(bella);
 
-        Horse horse = new Horse("Thunder", "2015-07-21", Arrays.asList("Trot", "Canter", "Gallop"));
-        registry.addAnimal(horse);
+        // кошки
+        Cat whiskers = new Cat("Whiskers", "2019-05-15", Arrays.asList("Sit", "Pounce"));
+        registry.addAnimal(whiskers);
 
-        Camel camel = new Camel("Sandy", "2016-11-03", Arrays.asList("Walk", "Carry Load"));
-        registry.addAnimal(camel);
+        Cat smudge = new Cat("Smudge", "2020-02-20", Arrays.asList("Sit", "Pounce", "Scratch"));
+        registry.addAnimal(smudge);
 
-        Donkey donkey = new Donkey("Eeyore", "2017-09-18", Arrays.asList("Walk", "Carry Load", "Bray"));
-        registry.addAnimal(donkey);
+        Cat oliver = new Cat("Oliver", "2020-06-30", Arrays.asList("Meow", "Scratch", "Jump"));
+        registry.addAnimal(oliver);
 
-        // Вывод списка всех животных
+        // хомяки
+        Hamster hammy = new Hamster("Hammy", "2021-03-10", Arrays.asList("Roll", "Hide"));
+        registry.addAnimal(hammy);
+
+        Hamster peanut = new Hamster("Peanut", "2021-08-01", Arrays.asList("Roll", "Spin"));
+        registry.addAnimal(peanut);
+
+        // лошади
+        Horse thunder = new Horse("Thunder", "2015-07-21", Arrays.asList("Trot", "Canter", "Gallop"));
+        registry.addAnimal(thunder);
+
+        Horse storm = new Horse("Storm", "2014-05-05", Arrays.asList("Trot", "Canter"));
+        registry.addAnimal(storm);
+
+        Horse blaze = new Horse("Blaze", "2016-02-29", Arrays.asList("Trot", "Jump", "Gallop"));
+        registry.addAnimal(blaze);
+
+        // верблюды
+        Camel sandy = new Camel("Sandy", "2016-11-03", Arrays.asList("Walk", "Carry Load"));
+        registry.addAnimal(sandy);
+
+        Camel dune = new Camel("Dune", "2018-12-12", Arrays.asList("Walk", "Sit"));
+        registry.addAnimal(dune);
+
+        Camel sahara = new Camel("Sahara", "2015-08-14", Arrays.asList("Walk", "Run"));
+        registry.addAnimal(sahara);
+
+        // ослы
+        Donkey eeyore = new Donkey("Eeyore", "2017-09-18", Arrays.asList("Walk", "Carry Load", "Bray"));
+        registry.addAnimal(eeyore);
+
+        Donkey burro = new Donkey("Burro", "2019-01-23", Arrays.asList("Walk", "Bray", "Kick"));
+        registry.addAnimal(burro);
+
+        // список с командами
         registry.listAllAnimals();
 
-        // Вывод списка команд для каждого животного
-        registry.listCommands(dog);
-        registry.listCommands(cat);
-        registry.listCommands(hamster);
-        registry.listCommands(horse);
-        registry.listCommands(camel);
-        registry.listCommands(donkey);
-
-        // Обучение новой команды
-        registry.trainCommand(dog, "Roll Over");
-        registry.listCommands(dog);
-
-        // Вывод общего количества животных в реестре
+        // всего
         System.out.println("Общее количество животных в реестре: " + registry.getTotalAnimalsCount());
+
+        // с днём рождения
+        registry.listAnimalsByBirthDate();
     }
 }
 

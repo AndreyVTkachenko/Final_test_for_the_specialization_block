@@ -11,4 +11,9 @@ public class Camel extends PackAnimal {
     public List<String> listCommands() {
         return getCommands();
     }
+
+    @Override
+    public String getType() {
+        return "Camel";
+    }
 }

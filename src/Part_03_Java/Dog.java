@@ -11,4 +11,9 @@ public class Dog extends Pet{
     public List<String> listCommands() {
         return getCommands();
     }
+
+    @Override
+    public String getType() {
+        return "Dog";
+    }
 }

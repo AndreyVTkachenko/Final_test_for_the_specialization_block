@@ -31,4 +31,6 @@ public abstract class Animal {
     public void addCommand(String newCommand) {
         commands.add(newCommand);
     }
+
+    public abstract String getType();
 }

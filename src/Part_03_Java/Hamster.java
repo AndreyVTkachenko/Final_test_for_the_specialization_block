@@ -11,4 +11,9 @@ public class Hamster extends Pet{
     public List<String> listCommands() {
         return getCommands();
     }
+
+    @Override
+    public String getType() {
+        return "Hamster";
+    }
 }

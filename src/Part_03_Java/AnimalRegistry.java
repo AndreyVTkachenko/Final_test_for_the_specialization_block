@@ -53,4 +53,8 @@ public class AnimalRegistry {
             System.out.println(animal.getName() + " (" + animal.getBirthDate() + ")");
         }
     }
+
+    public List<Animal> getAnimals() {
+        return animals;
+    }
 }

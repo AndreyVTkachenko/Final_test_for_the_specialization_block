@@ -65,19 +65,27 @@ public class Main {
         registry.listAllAnimals();
         System.out.println();
 
-        // всего
-        System.out.println("Общее количество животных в реестре: " + registry.getTotalAnimalsCount());
-        System.out.println();
 
-        // с днём рождения
-        registry.listAnimalsByBirthDate();
-        System.out.println();
+        // записываем в файл
+        AnimalRegistryWriter writer = new AnimalRegistryWriter("C:\\Users\\gepat\\Documents\\Обучение в GeekBrains" +
+                "\\Итоговая КР по блоку специализация\\Final_test_for_the_specialization_block\\src\\Part_03_Java\\" +
+                "animal_registry.txt");
+        writer.writeRegistryToFile(registry.getAnimals());
 
-        // + команда
-        System.out.println("Текущие команды для " + fido.getName() + ":");
-        registry.listCommands(fido);
-        registry.trainCommand(fido, "Roll Over");
-        registry.listCommands(fido);
+
+//        // всего
+//        System.out.println("Общее количество животных в реестре: " + registry.getTotalAnimalsCount());
+//        System.out.println();
+//
+//        // с днём рождения
+//        registry.listAnimalsByBirthDate();
+//        System.out.println();
+//
+//        // + команда
+//        System.out.println("Текущие команды для " + fido.getName() + ":");
+//        registry.listCommands(fido);
+//        registry.trainCommand(fido, "Roll Over");
+//        registry.listCommands(fido);
     }
 }
 

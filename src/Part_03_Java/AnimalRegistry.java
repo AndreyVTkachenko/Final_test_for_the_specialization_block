@@ -1,6 +1,8 @@
 package Part_03_Java;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class AnimalRegistry {
@@ -41,5 +43,14 @@ public class AnimalRegistry {
 
     public int getTotalAnimalsCount() {
         return animals.size();
+    }
+
+    public void listAnimalsByBirthDate() {
+        Collections.sort(animals, Comparator.comparing(Animal::getBirthDate));
+
+        System.out.println("Список животных по дате рождения:");
+        for (Animal animal : animals) {
+            System.out.println(animal.getName() + " (" + animal.getBirthDate() + ")");
+        }
     }
 }

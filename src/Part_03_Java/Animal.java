@@ -5,6 +5,7 @@ import java.util.List;
 public abstract class Animal {
     private String name;
     private String birthDate; // возможно следует заменить на String если возникнут сложности в дальнейшем
+    List<String> commands;
 
     public Animal(String name, String birthDate) {
         this.name = name;
@@ -20,4 +21,11 @@ public abstract class Animal {
     }
 
     public abstract List<String> listCommands();
+
+    public List<String> getCommands() {
+        return commands;
+    }
+
+    public void addCommand(String newCommand) {
+    }
 }

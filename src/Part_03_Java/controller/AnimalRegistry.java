@@ -1,4 +1,6 @@
-package Part_03_Java;
+package Part_03_Java.controller;
+
+import Part_03_Java.model.*;
 
 import java.util.ArrayList;
 import java.util.Collections;

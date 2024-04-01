@@ -1,9 +1,9 @@
-package Part_03_Java;
+package Part_03_Java.model;
 
 import java.util.List;
 
-public abstract class PackAnimal extends Animal {
-    public PackAnimal(String name, String birthDate, List<String> commands) {
+public abstract class Pet extends Animal {
+    public Pet(String name, String birthDate, List<String> commands) {
         super(name, birthDate);
         this.commands.addAll(commands);
     }

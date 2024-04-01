@@ -1,5 +1,9 @@
 package Part_03_Java;
 
+import Part_03_Java.controller.AnimalRegistry;
+import Part_03_Java.model.*;
+import Part_03_Java.view.ConsoleInterface;
+
 import java.util.List;
 
 public class Main {

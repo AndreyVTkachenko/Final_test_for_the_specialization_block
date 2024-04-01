@@ -1,4 +1,7 @@
-package Part_03_Java;
+package Part_03_Java.view;
+
+import Part_03_Java.controller.AnimalRegistry;
+import Part_03_Java.model.*;
 
 import java.util.ArrayList;
 import java.util.List;

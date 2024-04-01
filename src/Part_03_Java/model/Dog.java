@@ -1,4 +1,4 @@
-package Part_03_Java;
+package Part_03_Java.model;
 
 import java.util.List;
 

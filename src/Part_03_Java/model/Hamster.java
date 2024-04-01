@@ -1,9 +1,9 @@
-package Part_03_Java;
+package Part_03_Java.model;
 
 import java.util.List;
 
-public class Camel extends PackAnimal {
-    public Camel(String name, String birthDate, List<String> commands) {
+public class Hamster extends Pet{
+    public Hamster(String name, String birthDate, List<String> commands) {
         super(name, birthDate, commands);
     }
 
@@ -14,6 +14,6 @@ public class Camel extends PackAnimal {
 
     @Override
     public String getType() {
-        return "Camel";
+        return "Hamster";
     }
 }
